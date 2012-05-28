@@ -1,0 +1,83 @@
+﻿@charset "UTF-8";
+/*------------------------------------*\
+	$NARROW
+\*------------------------------------*/
+/*
+CSS for tablets and narrower devices
+*/
+@media (min-width: 721px) and (max-width: 960px){
+}
+/*--- END NARROW ---*/
+
+
+
+
+
+/*------------------------------------*\
+	$MOBILE
+\*------------------------------------*/
+/*
+CSS for mobile devices.
+Linearise it!
+*/
+@media (max-width: 720px){
+/*------------------------------------*\
+	MAIN
+\*------------------------------------*/
+html{
+	font-size:1.125em; /* Make text slightly larger for smaller devices to improve readability. */
+}
+body{
+	-webkit-text-size-adjust:none;
+}
+.container{
+	width:auto;
+}
+.grids{
+	margin:0;
+	width:auto;
+}
+[class^="grid-"],
+.grids [class^="grid-"]{
+	width:auto;
+	float:none;
+	margin:0;
+}
+
+
+
+
+
+/*------------------------------------*\
+	LOGO
+\*------------------------------------*/
+.logo{
+	margin-left:auto;
+	margin-right:auto;
+}
+
+
+
+
+
+/*------------------------------------*\
+	TYPE
+\*------------------------------------*/
+/*--- LISTS ---*/
+ul,
+ol,
+dl{
+	margin-left:1.5em;
+}
+
+
+
+
+
+/*------------------------------------*\
+	IMAGES
+\*------------------------------------*/
+img.left,
+img.right	{ max-width:50%; height:auto; }
+}
+/*--- END MOBILE ---*/
