@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-
-<html lang="en">
+<!--[if lt IE 8]><html class="oldie lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if IE 8]><html class="ie8 lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
 <head>
 
 <meta charset="utf-8">
@@ -9,7 +10,7 @@
 <meta name="description" content="###" />
 <link rel="stylesheet" type="text/css" href="assets/css/core.css" media="all" />
 <link rel="stylesheet" type="text/css" href="assets/css/style.css" media="all" />
-<!--[if lte IE 9]><script type="text/javascript" src="assets/js/ie.js"></script><![endif]-->
+<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie.css"><script type="text/javascript" src="assets/js/ie.js"></script><![endif]-->
 </head>
 <body>
 
@@ -17,81 +18,212 @@
 
 <div class="media">
   <a class="img" href="http://twitter.com/stubbornella">
-  	<img src="http://placehold.it/100x100" alt="pic" />
+    <img src="http://placehold.it/100x100" alt="pic" />
   </a>
   <div class="body">
     @Stubbornella 14 minutes ago <br>@Stubbornella 14 minutes ago <br>@Stubbornella 14 minutes ago <br>@Stubbornella 14 minutes ago <br>@Stubbornella 14 minutes ago <br>@Stubbornella 14 minutes ago <br>@Stubbornella 14 minutes ago <br>@Stubbornella 14 minutes ago <br>@Stubbornella 14 minutes ago <br>@Stubbornella 14 minutes ago <br>
 
     <a class="media" href="">
-		<img src="http://placehold.it/50x50" alt="" class="img">
-		<p class=body>Get Product for half price!</p>
-	</a>
+        <img src="http://placehold.it/50x50" alt="" class="img">
+        <p class=body>Get Product for half price!</p>
+    </a>
 
   </div>
 </div>
 
 
 
+<div class="container">
+    
+    <!-- Basic grid  -->
+
+    <div class="row">
+        <div class="grid-col mq1-one-half">
+            <h2>Basic grid</h2>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.</p>
+        </div>
+        <div class="grid-col mq1-one-half">
+            <h2>Basic grid</h2>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.</p>
+        </div>
+    </div>
+
+    <hr>
+
+
+    <!-- Changing grid  -->
+
+    <div class="row">
+        <div class="grid-col mq1-one-half mq2-two-third">
+            <h2>Changing grid</h2>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+        </div>
+        <div class="grid-col mq1-one-half mq2-one-third">
+            <h2>Changing grid</h2>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+        </div>
+    </div>
+
+    <hr>
+
+    
+    <!-- Jumping grid -->
+
+    <div class="row">   
+        <div class="grid-col mq1-one-half mq2-one-third">
+            <h2>Jumping grid</h2>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+        </div>
+        <div class="grid-col mq1-one-half mq2-one-third">
+            <h2>Jumping grid</h2>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+        </div>
+        <div class="grid-col mq2-one-third">
+            <h2>Jumping grid</h2>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+        </div>
+    </div>
+
+    <hr>
+    
+    <!-- Nested grid -->
+    
+    <div class="row">
+        <div class="grid-col mq1-one-half">
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+
+            <hr>
+            
+                <div class="row">   
+                    <div class="grid-col mq3-one-half">
+                        <h2>Nested grid</h2>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                    </div>
+                    <div class="grid-col mq3-one-half">
+                        <h2>Nested grid</h2>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                    </div>
+                </div>
+            
+        </div>
+        <div class="grid-col mq1-one-half">
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Smaller gutter -->
+
+    <div class="row half-gutter">    
+        <div class="grid-col mq2-one-fourth">
+            <h2>Smaller gutter</h2>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.</p>
+        </div>
+        <div class="grid-col mq2-one-fourth">
+            <h2>Smaller gutter</h2>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.</p>
+        </div>
+        <div class="grid-col mq2-one-fourth">
+            <h2>Smaller gutter</h2>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.</p>
+        </div>
+        <div class="grid-col mq2-one-fourth">
+            <h2>Smaller gutter</h2>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.</p>
+        </div>
+    </div>
+
+    <hr>
+    
+    <!-- Blocked grid -->
+    
+    <div class="row">    
+        <div class="grid-col mq1-one-half mq2-one-third">
+            <div class="island">
+                <h2>Blocked grid</h2>
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+            </div>
+        </div>
+        <div class="grid-col mq1-one-half mq2-two-third">
+            <div class="island">
+                <h2>Blocked grid</h2>
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+        
+    
+</div>
+
+
+
+
+
+
 
 
 <div class="container">
-	<header class="head">
+    <header class="head">
 
-			<h1>###</h1>
+            <h1>###</h1>
 
-	</header>
+    </header>
 
-	<nav class="main_nav">
-			<!-- something -->
-	</nav>
+    <nav class="main_nav">
+            <!-- something -->
+    </nav>
 
-	<div class="body">
+    <div class="body">
 
-			<!-- headings -->
-			<p>This is a sample of the heading texts:<br>在post内使用无需加class.</p>
-			<h1 class="h1">这里是H1标题</h1>
-			<h2 class="h2">这里是H2标题</h2>
-			<h3 class="h3">这里是H3标题</h3>
-			<h4 class="h4">这里是H4标题</h4>
-			<h5 class="h5">这里是H5标题</h5>
-			<h6 class="h6">这里是H6标题</h6>
+            <!-- headings -->
+            <p>This is a sample of the heading texts:<br>在post内使用无需加class.</p>
+            <h1 class="h1">这里是H1标题</h1>
+            <h2 class="h2">这里是H2标题</h2>
+            <h3 class="h3">这里是H3标题</h3>
+            <h4 class="h4">这里是H4标题</h4>
+            <h5 class="h5">这里是H5标题</h5>
+            <h6 class="h6">这里是H6标题</h6>
 
-			<!-- buttons -->
-			<div class="line">
-			<a href="###" class="btn black_btn"><span>默认按钮</span></a>
-			<a href="###" class="btn white_btn"><span>白色按钮</span></a>
-			<a href="###" class="btn big_btn"><span>大按钮</span></a>
-			</div>
-			
-			<!-- medias -->
-			<div class="media">
-				<a href="http://twitter.com/cnjoel" class="img"><img src="http://placehold.it/128x128" alt="img" /></a>
-				<div class="body">
-					<h3>通常意义上的图文混排</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					<div class="media">
-						<a href="http://twitter.com/cnjoel" class="img icon"><img src="http://placehold.it/32x32" alt="img" /></a>
-						<div class="body">event date</div>
-					</div>
-				</div>
-			</div>
-			
-			
-			<div class="media">
-				<a href="http://twitter.com/cnjoel" class="img" style="background-image:url(http://placehold.it/510x290); width:510px; height:290px;"><img src="http://placehold.it/128x128" alt="img" style="position:relative; top:50%; left:50%;margin-left: -32px; margin-top:-32px;opacity: .8;" height="64" width="64" /></a>
-				<div class="body">
-					<p>Last week I went to Yahoo! to give a talk about design performance for YUI theater.</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				</div>
-			</div>
+            <!-- buttons -->
+            <div class="line">
+            <a href="###" class="btn black_btn"><span>默认按钮</span></a>
+            <a href="###" class="btn white_btn"><span>白色按钮</span></a>
+            <a href="###" class="btn big_btn"><span>大按钮</span></a>
+            </div>
+            
+            <!-- medias -->
+            <div class="media">
+                <a href="http://twitter.com/cnjoel" class="img"><img src="http://placehold.it/128x128" alt="img" /></a>
+                <div class="body">
+                    <h3>通常意义上的图文混排</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <div class="media">
+                        <a href="http://twitter.com/cnjoel" class="img icon"><img src="http://placehold.it/32x32" alt="img" /></a>
+                        <div class="body">event date</div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="media">
+                <a href="http://twitter.com/cnjoel" class="img" style="background-image:url(http://placehold.it/510x290); width:510px; height:290px;"><img src="http://placehold.it/128x128" alt="img" style="position:relative; top:50%; left:50%;margin-left: -32px; margin-top:-32px;opacity: .8;" height="64" width="64" /></a>
+                <div class="body">
+                    <p>Last week I went to Yahoo! to give a talk about design performance for YUI theater.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
 
-	</div><!-- /body --> 
+    </div><!-- /body --> 
 
-	<footer class="foot">
+    <footer class="foot">
 
-			<!-- something -->
+            <!-- something -->
 
-	</footer>
+    </footer>
 </div>
 
 

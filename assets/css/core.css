@@ -28,6 +28,7 @@ FORMS
 TABLES
 MISC
 CLASSES
+MEDIAQUERY
 */
 
 
@@ -193,29 +194,39 @@ a base grid-system
 .container {
 	margin: 0 auto;
 	position: relative;
-	width: 940px;
+	width: 90%;
 }
 
 .row {
-  margin-left: -20px;
+  margin-left: -3em;
 }
 
-.one-half, .one-third, .two-third, .one-fourth, .three-fourth {
+.grid-col {
 	float: left;
-	margin-left: 20px;
+	padding-left: 3em;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
-.one-half.last, .one-third.last, .two-third.last, .one-fourth.last, .three-fourth.last { margin-right: 0px; }
+.half-gutter {
+  margin-left: -1.5em;
+}
+.half-gutter .grid-col {
+  padding-left: 1.5em;
+}
 
-.one-half { width: 460px; }
 
-.one-third { width: 300px; }
+.one-half { width: 50%; }
 
-	.two-third { width: 620px; }
+.one-third { width: 33.333%; }
 
-.one-fourth { width: 220px; }
+	.two-third { width: 66.666%; }
 
-	.three-fourth { width: 700px; }
+.one-fourth { width: 25%; }
+
+	.three-fourth { width: 75%; }
 
 
 
@@ -572,3 +583,61 @@ Some not-too-pretty and insemantic classes to do odd jobs.
 .text-right		{ text-align:right; }
 .text-center,
 .text-centre	{ text-align:center; }
+
+
+
+
+/*------------------------------------*\
+	$MEDIAQUERY
+\*------------------------------------*/
+/* -- Media query 1 (mq1)
+------------------------------------------------------------- */
+@media only screen and (min-width: 30em) {
+  .mq1-one-half {
+    width: 50%; }
+
+  .mq1-one-third {
+    width: 33.333%; }
+
+  .mq1-two-third {
+    width: 66.666%; }
+
+  .mq1-one-fourth {
+    width: 25%; }
+
+  .mq1-three-fourth {
+    width: 75%; } }
+/* -- Media query 2 (mq2)
+------------------------------------------------------------- */
+@media only screen and (min-width: 48em) {
+  .mq2-one-half {
+    width: 50%; }
+
+  .mq2-one-third {
+    width: 33.333%; }
+
+  .mq2-two-third {
+    width: 66.666%; }
+
+  .mq2-one-fourth {
+    width: 25%; }
+
+  .mq2-three-fourth {
+    width: 75%; } }
+/* -- Media query 3 (mq3)
+------------------------------------------------------------- */
+@media only screen and (min-width: 60em) {
+  .mq3-one-half {
+    width: 50%; }
+
+  .mq3-one-third {
+    width: 33.333%; }
+
+  .mq3-two-third {
+    width: 66.666%; }
+
+  .mq3-one-fourth {
+    width: 25%; }
+
+  .mq3-three-fourth {
+    width: 75%; } }
